@@ -1,6 +1,6 @@
 import React from "react";
 
-import Page from "../components/Page";
+import PageLogin from "../components/PageLogin";
 import LogoutForm from "../components/Auth/LogoutForm";
 
 import pageStyles from "../components/Page.module.scss";
@@ -10,9 +10,9 @@ function Logout() {
     const { logout } = useAuth();
 
     return (
-        <Page className={pageStyles.Inverse} mainClassName={pageStyles.VerticalCenter}>
+        <PageLogin className={pageStyles.Inverse} mainClassName={pageStyles.VerticalCenter}>
             <LogoutForm logout={logout} />
-        </Page>
+        </PageLogin>
     );
 }
 
